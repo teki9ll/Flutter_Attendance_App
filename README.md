@@ -34,3 +34,11 @@ Before running this project, make sure you have the following installed:
       exit()  # exit the shell
 
 5. Finally, start the Django development server: python manage.py runserver 0.0.0.0:80
+
+### C. Flutter 
+
+
+Make sure to replace the http API request URL with your Django server's IP address:
+
+1. In main.dart, find line 39: final String apiUrl = "http://192.168.1.5/api/login/"; and change the IP address to your Django server's IP.
+2. Use your phone as a virtual device and run the app on it.
