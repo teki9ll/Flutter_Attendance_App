@@ -40,5 +40,31 @@ Before running this project, make sure you have the following installed:
 
 Make sure to replace the http API request URL with your Django server's IP address:
 
-1. In main.dart, find line 39: final String apiUrl = "http://192.168.1.5/api/login/"; and change the IP address to your Django server's IP.
+1. Find and change the IP address to your Django server's IP.
+      main.dart           - line 39: final String apiUrl = "http://192.168.1.5/api/login/"; 
+      takeattendance.dart - line 28: Uri url = Uri.parse('http://192.168.1.5/api/students/');
+      attendancePage.dart - line 78: Uri url = Uri.parse('http://192.168.1.5/api/add_attendance/');
 2. Use your phone as a virtual device and run the app on it.
+
+## Contributing
+
+Contributions to this project are welcome! If you find any issues or have ideas for improvements, please feel free to open an issue or submit a pull request. We appreciate any help in making this project better.
+
+When contributing, please ensure the following:
+
+- Describe your changes in detail, including the problem and solution.
+- Provide clear and concise commit messages.
+- Make sure your code follows the project's coding style and guidelines.
+
+Thank you for contributing to this project!
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). You can find the detailed terms in the [LICENSE](LICENSE) file.
+
+## Thank You
+
+Thank you for using this application and being a part of this community. Your support and feedback are invaluable to us. If you have any questions or need further assistance, please don't hesitate to reach out. We hope this project proves useful to you and others!
+
+Happy coding!
+
