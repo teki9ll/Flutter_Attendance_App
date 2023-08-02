@@ -55,7 +55,7 @@ Make sure to replace the http API request URL with your Django server's IP addre
    
 2. Use your phone as a virtual device and run the app on it.
 
-3. To login you can see the Teachers database in django admin panel or use this username and password:
+3. To login in the Attendance app you can see the Teachers database in django admin panel or use this username and password:
    - username = T00001
    - password = hashed_password1
 
