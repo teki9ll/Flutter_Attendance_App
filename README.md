@@ -53,7 +53,11 @@ Make sure to replace the http API request URL with your Django server's IP addre
 - takeattendance.dart - line 28: Uri url = Uri.parse('http://192.168.1.5/api/students/');  
 - attendancePage.dart - line 78: Uri url = Uri.parse('http://192.168.1.5/api/add_attendance/');
    
-3. Use your phone as a virtual device and run the app on it.
+2. Use your phone as a virtual device and run the app on it.
+
+3. To login you can see the Teachers database in django admin panel or use this username and password:
+   - username = T00001
+   - password = hashed_password1
 
 ## Contributing
 
