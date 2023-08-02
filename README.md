@@ -23,17 +23,24 @@ Before running this project, make sure you have the following installed:
 
 1. Install requirements from req.txt by running: `pip install -r req.txt`.
 2. Run migrations:
+   
       python manage.py makemigrations teachers
+   
       python manage.py migrate
-3. Start the Django shell:
+   
+4. Start the Django shell:
+   
       python manage.py shell
 
-4. Inside the shell, run the following commands to add dummy data to the database and create a superuser (username: admin, password: admin)
+6. Inside the shell, run the following commands to add dummy data to the database and create a superuser (username: admin, password: admin)
+   
       import setup
+   
       setup.create()
+   
       exit()  # exit the shell
 
-5. Finally, start the Django development server: python manage.py runserver 0.0.0.0:80
+8. Finally, start the Django development server: python manage.py runserver 0.0.0.0:80
 
 ### C. Flutter 
 
@@ -41,10 +48,14 @@ Before running this project, make sure you have the following installed:
 Make sure to replace the http API request URL with your Django server's IP address:
 
 1. Find and change the IP address to your Django server's IP.
-      main.dart           - line 39: final String apiUrl = "http://192.168.1.5/api/login/"; 
+   
+      main.dart           - line 39: final String apiUrl = "http://192.168.1.5/api/login/";
+   
       takeattendance.dart - line 28: Uri url = Uri.parse('http://192.168.1.5/api/students/');
+   
       attendancePage.dart - line 78: Uri url = Uri.parse('http://192.168.1.5/api/add_attendance/');
-2. Use your phone as a virtual device and run the app on it.
+   
+3. Use your phone as a virtual device and run the app on it.
 
 ## Contributing
 
